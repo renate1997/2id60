@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Informatie over Vessem</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+<style>
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pontano Sans';
+}
+
+body {
+  margin: 0;
+}
+
+p{
+  color: #660033;
+    font-size:18px;
+}
+
+h1{
+ font-size:70px;
+}
+
+h2{
+ font-size: 30px;
+ text-align: center;
+}
+
+ul {
+ color: #660033;
+ font-size: 18px;
+}
+
+#image {
+  width: 100%;
+    z-index:-99;
+    margin-top: 100px;
+}
+
+a {
+ font-size: 20px;
+}
+
+
+/* Style the top navigation bar */
+.topbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+    z-index: 999;
+}
+
+
+/* Change color on hover */
+.topbar a:hover {
+    background-color: #ddd;
+    color: black;
+    
+}
+
+.topbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar a:not(:first-child) {display: none;}
+  .topbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topbar.responsive {position: relative;}
+  .topbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+.image_scaling {
+max-height: 500px;
+min-height:25%;
+width: 100%;
+overflow: hidden;
+z-index: 1;
+}
+
+
+/* Style the content */
+
+
+
+
+.nieuws {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.news1 {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+
+nav a { 
+color: #E00; 
+display: block; 
+padding: 0.5em 1em; 
+text-decoration: none; 
+}
+
+nav a:hover {
+color: #F55; 
+}
+nav ul,
+nav ul li { 
+list-style-type: none; 
+padding: 0; 
+margin: 0; 
+}
+
+nav > ul { 
+background: #333; 
+text-align: left; 
+}
+
+nav > ul > li { 
+display: inline-block; 
+border-left: solid 1px #aaa; 
+}
+
+nav > ul > li:first-child { 
+border-left: none; 
+}
+
+.slidedown-nieuws {
+  background: #DDD;
+}
+
+.geschiedenis {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    text-align: left;
+}
+
+.bezienswaardigheden {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    text-align: left;
+}
+
+.b1 {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.b2 {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.b3 {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.b4 {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.b5 {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#imgb {
+float: left;
+height: 50%;
+width: 50%;
+padding: 10px;
+
+}
+
+.evenementen {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    text-align: left;
+}
+#imge{
+width:100%;
+}
+
+.click {
+text-align: center;
+}
+
+.omgeving {
+    background-color: #f9f2ec;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    text-align: left;
+}
+
+/* Style the footer */
+.bottombar {
+    background-color: #f9f2ec;
+    padding: 10px;
+    text-align: center;
+}
+ 
+ #map {
+        height: 400px;
+        width: 100%;
+       }
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+} 
+
+
+fieldset, label { margin: 0; padding: 0; }
+
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+.heading {
+    font-size: 22px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1.4em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+ 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #f9f2ec;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#panel1, #flip1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #f9f2ec;
+    border: solid 1px #c3c3c3;
+}
+
+#panel1 {
+    padding: 50px;
+    display: none;
+}
+
+#panel2, #flip2 {
+    padding: 5px;
+    text-align: center;
+    background-color: #f9f2ec;
+    border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+    padding: 50px;
+    display: none;
+}
+
+#panel3, #flip3 {
+    padding: 5px;
+    text-align: center;
+    background-color: #f9f2ec;
+    border: solid 1px #c3c3c3;
+}
+
+#panel3 {
+    padding: 50px;
+    display: none;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flip3").click(function(){
+        $("#panel3").slideToggle("slow");
+    });
+});
+</script>
+
+</head>
+<body>
+
+
+<div class="topbar" id="myTopnav">
+ <nav>
+ 
+  <a href="#home"><strong>Vessem</strong><i>info</i></a>
+  <a href="#home">Home</a>
+  <a href="#nieuws">Nieuws</a>
+  <a href="#geschiedenis">Geschiedenis</a>
+  <a href="#bezienswaardigheden">Bezienswaardigheden</a>
+  <a href="#eetgelegenheden">Eetgelegenheden</a>
+  <a href="#omgeving">Omgeving</a>
+  <a href="#locatie">Locatie</a>
+  <a href="#nieuwsbrief">Nieuwsbrief</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </nav>
+  
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "topbar";
+    }
+}
+</script>
+
+<a name="home"></a>
+<div class="image_scaling">
+ <img id="image" src="https://www.eurocampingvessem.nl/wp-content/uploads/2014/04/eurocamping_vessem_slide_05_visvijver3.jpg" onclick="changeImage()">
+
+        <script type = "text/javascript">
+
+            var image=document.getElementById("image");
+            var currentPos = 0;
+            var images = ["https://www.eurocampingvessem.nl/wp-content/uploads/2014/04/eurocamping_vessem_slide_05_visvijver3.jpg","https://www.eurocampingvessem.nl/wp-content/uploads/2014/03/eurocamping_vessem_slide_25_dekempen.jpg","https://www.eurocampingvessem.nl/wp-content/uploads/2014/03/eurocamping_vessem_slide_16_omgeving.jpg"]
+
+            function nextimage() {
+                if (++currentPos >= images.length) currentPos = 0;
+                image.src = images[currentPos];
+            }
+
+            setInterval(nextimage, 5000);
+
+          function changeImage() {
+
+        if(document.getElementById("image").src ==            "https://www.eurocampingvessem.nl/wp-content/uploads/2014/04/eurocamping_vessem_slide_05_visvijver3.jpg") 
+        {
+            document.getElementById("image").src = "https://www.eurocampingvessem.nl/wp-content/uploads/2014/03/eurocamping_vessem_slide_25_dekempen.jpg";
+            
+        }
+        else if(document.getElementById("image").src == "https://www.eurocampingvessem.nl/wp-content/uploads/2014/03/eurocamping_vessem_slide_25_dekempen.jpg") 
+        {
+          document.getElementById("image").src = "https://www.eurocampingvessem.nl/wp-content/uploads/2014/03/eurocamping_vessem_slide_16_omgeving.jpg";
+        }
+        
+        else {
+            document.getElementById("image").src = "https://www.eurocampingvessem.nl/wp-content/uploads/2014/04/eurocamping_vessem_slide_05_visvijver3.jpg";
+        }
+    }
+    
+    </script>
+</div>
+
+<div class="click">
+<p><i>Click on the image to view the next one</i><br></p>
+</div>
+
+<a name="nieuws"></a>
+<div class="nieuws">
+<h2>Nieuws</h2>
+ 
+<div id="flip"><h3>Nieuws: Vergunningsaanvragen week 46 2017</h3></div>
+<div id="panel">   
+  <div class="news1">
+    <h3> Vergunningsaanvragen en bekendmakingen gemeente Eersel (week 46/17)</h3>
+<p>De gemeente Eersel heeft de afgelopen week (van zondag 12 november 2017 tot en met zondag 19 november 2017) de volgende acht bekendmakingen gepubliceerd:</p>
+<ul>
+<li>Ontwerpwijzigingsplan “Kom Vessem, Kuilenhurk 12” (15-11-2017)</li>
+<li>Ontwerpbestemmingsplan “Duizel-Noord, Eerste Herziening” (15-11-2017)</li>
+<li>Ontwerpbestemmingsplan “Koemeersdijk, Vierde Herziening” (15-11-2017)</li>
+<li>Ontwerpwijzigingsplan “Kom Vessem, Kuilenhurk 12” (15-11-2017)</li>
+<li>Ontwerpbestemmingsplan “Koemeersdijk, Vierde Herziening” (15-11-2017)</li>
+<li>Financiële verordening gemeente Eersel 2017 (14-11-2017)</li>
+<li>Bekendmakingen Vergunningen, meldingen en ontheffingen gemeente Eersel week 46 2017 (13-11-2017)</li>
+<li>Mandaatregeling VTH de Kempen 2017 - Eersel (13-11-2017) </li>
+</ul>
+  </div>
+</div>
+
+
+ 
+<div id="flip1"><h3>Ongeval in vessem op 22-11-2017</h3></div>
+<div id="panel1">   
+  <div class="news1">
+    <h3> Berger rijdt zich vast in weiland na zwaar ongeval in Vessem</h3>
+<p>VESSEM - Bij een ongeval in het buitengebied van Vessem is woensdagmorgen een automobiliste gewond geraakt. De vrouw kwam rond 8.15 uur uit de richting van het Hoogcasteren en reed de kruising met de Mr. De la Courtstraat over zonder daarbij voorrang te verlenen aan een automobilist die van Vessem richting Knegsel reed.
+
+Een aanrijding was het onvermijdelijke gevolg. De vrouw schoot daarna tussen twee bomen door en eindigde 100 meter verderop midden in een weiland. Ze door de ambulancedienst met onbekende verwondingen overgebracht naar het ziekenhuis. De automobilist ging na de aanrijding ook aan het tollen. Hij miste daarbij rakelings enkele bomen en raakte niet gewond.
+
+Beide voertuigen raakten zwaar beschadigd en moesten worden afgevoerd door een bergingsbedrijf. De berger reed zich echter vast in het drassige weiland toen hij de auto die daar was beland had getakeld. De boer van wie het land was reageerde licht geïrriteerd omdat hij er net had gezaaid en het gisteren had geregend. Wel ging hij een tractor halen om daarmee de berger uit het weiland te trekken. </p>
+  </div>
+</div>
+
+
+ 
+<div id="flip2"><h3>Nieuwe lijsttrekker D66 komt uit vessem (24-11-2017)</h3></div>
+<div id="panel2">   
+  <div class="news1">
+    <h3> Paul van Boxtel nieuwe lijsttrekker D66 Eersel</h3>
+<p>Paul van Boxtel uit Vessem is woensdagavond gekozen tot nieuwe lijsttrekker van D66 in Eersel tijdens de gemeenteraadsverkiezingen in 2018.  
+Van Boxtel woont met zijn partner en dochter in Vessem. Hij is werkzaam als Hoofd Scholing bij de Algemene Onderwijsbond. </p>
+  </div>
+</div>
+
+
+ 
+<div id="flip3"><h3>Vrouw gewond bij botsing in Vessem op 25-11-2017</h3></div>
+<div id="panel3">   
+  <div class="news1">
+    <h3> Vrouw raakt gewond bij botsing in Vessem</h3>
+<p>Vessem – Een automobiliste is woensdagochtend gewond geraakt bij een ongeluk in het buitengebied van Vessem.
+De vrouw kwam ter hoogte van het Hoogcasteren in botsing met een andere automobilist en raakte gewond. Ze is met onbekende verwondingen overgebracht naar het ziekenhuis. </p>
+  </div>
+</div>
+ 
+</div>
+
+
+<a name="geschiedenis"></a>
+<div class="geschiedenis">
+  <h2> Geschiedenis</h2>
+ 
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>1985</h2>
+      <p>In 1985 werd een nieuw gemeentehuis geopend, wat echter niet lang dienst heeft gedaan omdat de gemeente in 1997 bij Eersel werd gevoegd.</p>
+    </div>
+  </div> 
+  <div class="container right">
+    <div class="content">
+      <h2>1898</h2>
+      <p>In 1898 werd een nieuw gemeentehuis gebouwd.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1893</h2>
+      <p>De windmolen, door brand verwoest, werd herbouwd in 1893. </p>
+    </div>
+  </div>  
+  <div class="container right">
+    <div class="content">
+      <h2>1882</h2>
+      <p>In 1882 werd een nieuwe kerk gebouwd.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1815</h2>
+      <p>In 1815 werd de gemeente Vessem, Wintelre en Knegsel gevormd, waarvan Vessem het centrum werd. Ook de notabelen zoals de dokter kwamen in Vessem wonen.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1292</h2>
+      <p>De eerste vermelding van Vessem is uit 1292. Toen verleende hertog Jan I van Brabant gemeenterechten aan de inwoners van Vessem en Wintelre. Opgravingen aan het Kerkplein toonden aan dat er in de 11e eeuw al boerderijen om de kerk gegroepeerd lagen. Geleidelijk aan ontstonden er, ten gevolge van ontginningen, ten noorden van het dorp nieuwe buurtschappen. Het oudste nog bestaande gebouw is de kerktoren, die uit de 15e eeuw stamt. De boerderij Maaskant 5 is de oudste nog bestaande boerderij.</p>
+    </div>
+  </div>
+</div>
+
+<a name="bezienswaardigheden"></a>
+<div class="bezienswaardigheden">
+  <h2>Bezienswaardigheden</h2>
+    <div class="b1">
+    <img id="imgb" src="https://i.pinimg.com/originals/ef/6c/5b/ef6c5b522c1304f6b584684d294265fa.jpg" alt="raadhuis">
+    <h3> Oude raadhuis</h3>
+    <p>Oude raadhuis uit 1898 met nog een herinneringssteen die de inhuldiging van Koningin Wilhelmina in datzelfde jaar herdenkt. Het is een symmetrisch wit gebouwtje met een trapgevel.Op het einde van de 19de eeuw nemen de taken van de gemeentes toe. Men besluit tot nieuwbouw op een plek “waar de wegen van Hoogeloon, Middelbeers en Wintelre zich verenigen”. “Een versleten werkhuis zal worden afgebroken en daar ter plaatse zal het nieuwe gebouw verrijzen”. In het nieuwe gemeentehuis worden gedenkstenen geplaatst vanwege de kroning van de jonge koningin Wilhelmina. Op 6 september 1898 vindt de opening plaats. Op 30 maart 1898 besloten BW van Vessem c.a., gesteund door de raad, een nieuw gemeentehuis te bouwen op de hoek  van de Jan Smuldersstraat en de Wilhelminalaan. Het  perceel werd voor fl 1,50/m2 gekocht van buurman W. Olislagers.  In het nieuwe gebouw werd een gedenksteen geplaatst, die de kroning van koningin Wilhelmina en de opening van het nieuwe raadhuis memoreert. Bij de opening van het gebouw op 6 september 1898 worden alle Vessemse schoolkinderen onthaald op chocolademelk en krentenbrood; de dorpelingen die actief aan de bouw hebben meegewerkt worden uitgenodigd om een glas bier te komen drinken.
+
+In 1913, bij 25-jarig jubileum van burgemeester Visschers, krijgt de Vessemse patroonheilige Lambertus een prominente plaats op de gevel. In 1928 wordt het raadhuis nog eens uitgebreid met een kantoortje voor de plaatselijke veldwachter en twee cellen.
+
+Het doet dan dienst tot 1984, wanneer het nieuwe gemeentehuis geopend wordt,  een eindje verder aan de Jan Smuldersstraat.
+
+Maar in 1997 wordt de gemeente Vessem, Wintelre en Knegsel door een gemeentelijke herindeling opgeheven. Het gemeentehuis wordt dan verkocht aan De Welten Groep.<br><br></p> 
+    </div>
+    
+    <div class="b2">
+    <img id="imgb" src="http://www.surprise.holiday/images/hotels/hotel-de-gouden-leeuw/banner1.jpg" alt="Brouwerij">
+    <h3> Brouwerij 'De Leeuw'</h3>
+    <p>Op 27 augustus 1904 breekt er een brand uit als gevolg van vonken uit de schoorsteen van de brouwerij. Zeven huizen gaan in de vlammen op. Daaronder ook de boerderij verbonden met de Brouwerij de Leeuw. De Meijerijsche Courant van 30 augustus 1904 weet te melden “als een geluk bij een ongeluk kunnen wij nader mededelen dat de brouwerij bij den brand in zoverre behouden bleef, dat alsnog het brouwersbedrijf kan worden voortgezet. Dit is nog een klein lichtpunt voor den betrokken brouwer die toch reeds zijn woonhuis en vee verloren zag gaan”. In 1905 vindt nieuwbouw plaats van de brouwerij aan de straatzijde van de huidige Jan Smuldersstraat. De waterput werd daarbij uitgebouwd en verdiept. De zuiverheid en zachtheid maken het tot bijzonder en uitstekend brouwwater. Brouwerij 'De Leeuw' is een fraai oud bakstenen fabrieksgebouwtje met schoorsteen, dat in 2008 werd gerestaureerd.In de loop van de decennia ondergaat het brouwerij pand en de hiernaast gelegen herberg, café restaurant De Gouden Leeuw Vessem verschillende bouwkundige wijzigingen. Inmiddels was het pand aan de Jan Smuldersstraat geplaatst op de gemeentelijke monumentenlijst. Bij de restauratie van 2007-2008 werden de typische 'iconen' van een brouwerijgebouw weer aangebracht. Hieronder vallen bijvoorbeeld het koelschip (ruimte met ventilatieluiken voor het afkoelen van het hete brouwsel), de luiken, de boogramen en de keldergaten ('koekoeken') voor de ijsopslag in de brouwerijkelder. Het Project kreeg € 35.000 financiële steun van de provincie Brabant in het kader van de regeling "Instandhouding van Cultuurhistorisch waardevolle Objecten bekend onder het programma "Schatten van Brabant". Het is de bedoeling het gebouw weer te gebruiken voor het brouwen van bier.<br><br></p> 
+    </div>
+    
+    <div class="b3">
+    <img id="imgb" src="https://media.ndtrc.nl/Images/20130508/503e8eaa-f92e-4f4f-8c9c-9926df68edd8.jpg?maxwidth=850&maxheight=600" alt="kerk">
+    <h3> Sint-Lambertuskerk</h3>
+    <p>Sint-Lambertuskerk uit 1882; het neogotisch schip is ontworpen door de Tilburgse architect H. Bekkers. Het schip is gebouwd op de fundamenten van de oude kerk, die toen gesloopt is. Na de buitenrestauratie in 2005, vond in 2009 een binnenrestauratie plaats. Hierbij zijn volstrekt unieke florale wand- en gewelfschilderingen gerestaureerd van Jos Lommen - een leerling van Pierre Cuypers -, getekend door Lambert Heezenmans restauratiearchitect van de Sint-Jan. De kerk bezit een Loret orgel uit 1868 dat in 2009/2010 opnieuw werd gerestaureerd naar de oorspronkelijke mechanische werking. De toren van de kerk stamt uit de 15e eeuw en is uitgevoerd in Kempense gotiek met geledingen en spaarvelden die versierd zijn met boogfriezen. De kerk is omringd door een oude begraafplaats met een nog intacte 18e-eeuwse muur.De bakstenen kerk bestaat uit een westtoren met ingesnoerde torenspits, een driebeukig schip met drie traveeën in basilicale opstand en een driezijdig gesloten koor met een travee. De toren heeft drie geledingen, overhoekse steunberen, in de tweede geleding twee spaarvelden met boogfries en in de derde geleding aan iedere zijde twee keer twee gekoppelde spitsboogvormige galmgaten met galmborden. Aan iedere zijde heeft de toren een uurwerk en onder de dakrand een rondboogfries. Het middenschip, de zijbeuken en het koor hebben steunberen. Het hele gebouw heeft spitsboogvensters, behalve in de ene travee van het koor; daar bevinden zich twee rondvensters. De middenbeuk heeft dubbele spitsboogvensters. Het koor heeft een verlaagde noklijn ten opzichte van het schip. Aan de zuidzijde van het koor is de sacristie gebouwd.<br><br></p> 
+    </div>
+    
+    <div class="b4">
+    <img id="imgb" src="https://molens.hippoextranet.nl/07071954/noordbrabant/603_2.jpg" alt="molen">
+    <h3> De Molen Jacobus</h3>
+    <p>De Molen Jacobus, de grootste korenmolen van Nederland.De Molen Jacobus of Jacobusmolen is een ronde bakstenen beltkorenmolen in het Nederlandse dorp Vessem. Deze molen is gebouwd in 1893 nadat zijn voorganger, een achtkante koren- en oliemolen die in 1839 was gebouwd, afgebrand is. De molen werd gebouwd door molenmaker Antonius van Himbergen uit Woensel. Er zijn bij de bouw ook delen van een onbekende, gesloopte molen gebruikt.
+De naam van de molen heeft niets met Sint-Jacob te maken, maar is afgeleid van de molenaar Jacobus Peeters. De molen, die altijd naamloos geweest is, heeft deze naam pas bij de restauratie van 1986 verkregen.
+De molen werd in 1955 door de gemeente aangekocht van de weduwe Peeters. Ze werd gerestaureerd in 1969 en 1986. Toen was de molen weer draaivaardig. Tegenwoordig is de molen in beheer bij de Stichting de Vessemse Molen.
+De Jacobusmolen is qua vlucht de grootste windkorenmolen van Nederland. De naam van de molen heeft niets met Sint-Jacob te maken, maar is afgeleid van de molenaar Jacobus Peeters. De molen, die altijd naamloos geweest is, heeft deze naam pas bij het 100 jarig bestaan verkregen.De molen werd in 1955 door de gemeente aangekocht van de weduwe Peeters. Ze werd gerestaureerd in 1969 en 1986. Daarna  was en is de molen weer draaivaardig.In 2015 is opnieuw met behulp van financiele steun van de Provincie Noord-Brabant een volledige restauratie doorgevoerd. Tevens is mede met de de  Molenprijs 2013 een toilet gebouwd in de belt. De molen gaat mogelijk gepacht worden door stichting De Vessemse Molen. De gemeente Eersel blijft eigenaar. Het college en de gemeenteraad moeten zich nog uitspreken over het voorstel.
+De monumentale molen moet voor een flink bedrag worden gerestaureerd. Dat vond de gemeente eerder niet tot haar taken behoren en wilde daarom van de molen af.
+Uit een rapport uit 2011 bleek dat volledige, uitbestede restauratie 320.000 euro zou gaan kosten. Maar op korte termijn is in ieder geval 150.000 euro nodig, zegt Gerry Dorrestein, voorzitter van de stichting De Vessemse Molen. Ongeveer zeventig procent daarvan moet binnen te halen zijn als subsidie, grotendeels van Molenstichting Noord-Brabant. Die heeft een potje van 3,4 miljoen.
+De gemeente Eersel gaat waarschijnlijk wel een financiële bijdrage leveren om de stichting op gang te helpen de molen te behouden. Over de hoogte van dat bedrag laten beide partijen zich niet uit omdat het college en de raad nog moeten beslissen.<br><br></p> 
+    </div>
+    
+    <div class="b5">
+    <img id="imgb" src="http://static.panoramio.com/photos/original/77899488.jpg" alt="mariakapel">
+    <h3> Mariakapel of Veldkapel Ons Moeder</h3>
+    <p>Mariakapel of Veldkapel Ons Moeder aan de Jan Smuldersstraat, waar de weg vanuit Wintelre binnenkomt. De kapel is gebouwd in 1997. Het is een rechthoekig bakstenen gebouwtje met driekantige apsis en een zadeldak waarop zich een dakruiter met klokje bevindt. Binnenin de kapel vinden we een fraai houten Mariabeeld en een viertal gebrandschilderde ramen die van 2004-2006 geplaatst zijn. Deze werden vervaardigd door Mirthe Sleper en Christien Naber. Ze verbeelden episoden uit het leven van Maria. In de kapel is een fraaie decoratie geschilderd, alsmede een sterrenhemel die geïnspireerd is op de gewelven van de 'Santa Maria in Sopra Minerva' te Rome.<br><br></p> 
+    </div>
+
+</div>
+
+<a name="eetgelegenheden"></a>
+<div class="evenementen">
+  <h2>Eetgelegenheden</h2>
+    <div class="restaurant">
+    <h3>De Gouden Leeuw</h3> 
+    <img id="imge" src="http://www.brouwerijhotel.nl/l/library/download/urn:uuid:1b301cd3-595e-420d-ab6b-dc83b0b5a009/brouwerijvessem-4.png?height=405&width=925&scaleType=2&opt[color]=255,255,255" alt="smaeckvol">
+    <p> Brouwerij Hotel De Gouden Leeuw beschikt over vier kamers, waarvan één suite. Alle kamers zijn luxe uitgevoerd en beschikken over;</p>
+    <ul>
+<li>Ruime tweepersoons boxspring</li>
+<li>Een regendouche en een apart ligbad</li>
+<li>Led televisie met kabelzenders</li>
+<li>De kamers op de begane grond beschikken over een slaapbank voor twee kinderen</li>
+<li>De kamers hebben uitzicht op de binnentuin en de kamers op de begane grond beschikken over een terras. </li>
+</ul>
+<p> Er is zoveel lekkers in Nederland. Wij verrassen u graag met goede en eerlijke producten (uit Nederland). Onze kookstijl is gebaseerd op de klassieke Franse keuken. Natuurlijk wordt daar door onze Chef zijn eigen draai aan gegeven. Het resultaat ? (H)eerlijke gerechten die met passie door de Chef en zijn team worden bereid. Waarbij de herkenning en de smaak van de producten het vertrekpunt is. Wij laten u in ons restaurant graag ‘het echte product’ zien en proeven. Daarnaast werken wij bij De Gouden Leeuw uitsluitend met goede leveranciers. Leveranciers die aan onze strenge kwaliteitseisen voldoen. Ons keukenmotto is dan ook: Kwaliteit overwint alles! <br></p>
+    <p>Hieronder zou u deze eetgelegenheid een aantal sterren kunnen geven waardoor u toekomstige bezoekers een goed beeld kunt geven van de kwaliteit.<br></p>
+<fieldset class="rating">
+    <legend>Geef uw beoordeling:</legend>
+    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+</fieldset><p><br></p>
+
+<p><br><br></p><span class="heading">Beoordeling</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>3.8 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>130</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>25</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>16</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+</div>
+
+<div class="friettent">
+    <h3>Cafetaria de Smickel</h3> 
+    <img id="imge" src="http://www.desmickel.nl/img/header-locaties-vessem1.jpg" alt="smaeckvol">
+    <p>Welkom bij cafetaria De Smickel in Vessem. In 2015 namen wij cafetaria 'Het Smulhuis' over (voorheen cafetaria "d'n Toon") en na een paar kleine aanpassingen was de vierde 'Smickel' zaak een feit. Met 34 zitplaatsen binnen en 72 zitplaatsen op het terras is Smickel Vessem een kleine cafetaria wat betreft binnen zitplaatsen, maar daar in tegen heeft het een zeer groot terras.  <br></p>
+     <p>Hieronder zou u deze eetgelegenheid een aantal sterren kunnen geven waardoor u toekomstige bezoekers een goed beeld kunt geven van de kwaliteit.<br></p>
+<fieldset class="rating">
+    <legend>Geef uw beoordeling:</legend>
+    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+</fieldset><p><br></p>
+
+<p><br><br></p><span class="heading">Beoordeling</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.3 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>160</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>10</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+</div>
+</div>
+
+<div class="restaurant">
+    <h3>Restaurant Smaeckvol</h3> 
+    <img id="imge" src="http://jaimyscatering.nl/wp-content/uploads/2017/10/smaeckvol.png" alt="smaeckvol">
+    <p> Bij Restaurant Smaeckvol zijn we er vol van …Vol van smaeck natuurlijk!!
+Maar ook vol van Brabantse gastvrijheid, vol van de prachtige omgeving en onze authentieke hoeve. In ons restaurant aan de Vessemse Driehuizen wordt gemoedelijke Brabantse sfeer moeiteloos gecombineerd met een frisse kijk op koken. Eerlijke en herkenbare ingrediënten, veelal afkomstig van omliggende boerderijen. Toegankelijk en op een verrassende wijze bereid met respect voor grootmoeders keuken.
+Al plannen met Kerst? Wij serveren ook dit jaar weer een Smaeckvol Kerstdiner voor een vriendelijke prijs! klik hier voor het Menu
+Het wildseizoen is in volle gang, ook bij Smaeckvol serveren we diverse wild bereidingen. <br></p>
+     <p>Hieronder zou u deze eetgelegenheid een aantal sterren kunnen geven waardoor u toekomstige bezoekers een goed beeld kunt geven van de kwaliteit.<br></p>
+<fieldset class="rating">
+    <legend>Geef uw beoordeling:</legend>
+    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+</fieldset><p><br></p>
+
+<p><br><br></p><span class="heading">Beoordeling</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+</div>
+
+<a name="omgeving"></a>
+<div class="omgeving">
+  <h2>Omgeving</h2>
+    <p> Vessem ligt te midden van een afwisselend landschap met stukken bos en open veld. Ten westen van het dorp stroomt de Kleine Beerze waaromheen het natuurgebied Dal van de Kleine Beerze is gelegen. Ten westen van de Kleine Beerze ligt een coulisselandschap waar in de 20e eeuw nog open heidegebied was. We vinden hier nog enkele heiderestanten waarin zich het Hoolven bevindt. Op de heide is nog klokjesgentiaan, kleine zonnedauw en witte snavelbies aan te treffen.
+Ten noordoosten van het dorp liggen de bossen van de Buikheide die in het begin van de 20e eeuw zijn aangelegd. Het Groot- en Kleinmeer is een natuurreservaat binnen deze bossen. Ten zuiden van Vessem ligt een landbouwgebied afgewisseld met enkele kleinere stukjes loofbos.
+Er lopen vele wandel-, fiets- en ruiterroutes in de omgeving van Vessem. </p>
+</div>
+
+<a name="locatie"></a>
+<div class="bottombar">
+  <h2>Locatie Vessem</h2>
+</div>
+
+<div id="map"></div>
+    <script>
+      function initMap() {
+        var vessem = {lat: 51.419313 , lng: 5.287915};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: vessem
+        });
+        var marker = new google.maps.Marker({
+          position: vessem,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXR8IawHx2PGBMn89EJjKJcIfovwPDNKA&callback=initMap">
+    </script>
+
+<a name="nieuwsbrief"></a>
+<h2>Nieuwsbrief</h2>
+<p>Vul hier uw gegevens in om de nieuwsbrief te ontvangen:</p>
+
+<div class="contact">
+
+    <label for="fname">Voornaam</label>
+    <input type="text" id="fname" name="firstname" placeholder="Uw naam hier..">
+
+    <label for="lname">Achternaam</label>
+    <input type="text" id="lname" name="lastname" placeholder="Uw achternaam hier..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Nederland</option>
+      <option value="canada">België</option>
+      <option value="usa">Luxemburg</option>
+    </select>
+
+    <label for="subject">Email-adres</label>
+    <textarea id="subject" name="subject" placeholder="Typ hier uw email-adres.." ></textarea>
+
+    <input type="submit" value="Verstuur">
+
+</div>
+
+
+
+</body>
+</html>
